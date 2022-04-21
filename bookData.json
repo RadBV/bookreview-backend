@@ -1,0 +1,29 @@
+[{
+    "title": "Title1",
+    "author": "Author1",
+    "pages": 300,
+    "chapters": 40,
+    "id": 1
+},
+{
+    "title": "Title2",
+    "author": "Author2",
+    "pages": 300,
+    "chapters": 40,
+    "id": 2
+},
+{
+    "title": "Title3",
+    "author": "Author3",
+    "pages": 300,
+    "chapters": 40,
+    "id": 3
+},
+{
+    "title": "Title4",
+    "author": "Author4",
+    "pages": 300,
+    "chapters": 40,
+    "id": 4
+}
+]
