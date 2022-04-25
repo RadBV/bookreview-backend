@@ -1,29 +1,139 @@
-[{
-    "title": "Title1",
-    "author": "Author1",
-    "pages": 300,
-    "chapters": 40,
-    "id": 1
-},
 {
-    "title": "Title2",
-    "author": "Author2",
-    "pages": 300,
-    "chapters": 40,
-    "id": 2
-},
-{
-    "title": "Title3",
-    "author": "Author3",
-    "pages": 300,
-    "chapters": 40,
-    "id": 3
-},
-{
-    "title": "Title4",
-    "author": "Author4",
-    "pages": 300,
-    "chapters": 40,
-    "id": 4
+    "books":[
+        {
+            "id": "1",
+            "title": "The Lion, The Witch, and the Wardrobe",
+            "author": "C. S. Lewis",
+            "pages": "208",
+            "chapters": "17",
+            "genre": "Fantasy, Children's Fiction",
+            "cover_img": "https://g.christianbook.com/g/slideshow/0/09423/main/09423_1_ftc_dp.jpg"
+        },
+        {
+            "id": "2",
+            "title": "She: A History of Adventure",
+            "author": "H. Rider Haggard",
+            "pages": "189",
+            "chapters": "28",
+            "genre": "Adventure",
+            "cover_img": "https://images-na.ssl-images-amazon.com/images/I/81Ccf2K0axL.jpg"
+        },
+        {
+            "id": "3",
+            "title": "The Adventures of Pinocchio",
+            "author": "Carlo Collodi",
+            "pages": "224",
+            "chapters": "36",
+            "genre": "Fantasy, Children's Fiction",
+            "cover_img": "https://kbimages1-a.akamaihd.net/45a6a55a-c6ae-4d8e-9d8a-f97241c8630e/353/569/90/False/the-adventures-of-pinocchio-35.jpg"
+        },
+        {
+            "id": "4",
+            "title": "The Da Vinci Code",
+            "author": "Dan Brown",
+            "pages": "689",
+            "chapters": "101",
+            "genre": "Mystery Thriller",
+            "cover_img": "https://images-na.ssl-images-amazon.com/images/I/91Q5dCjc2KL.jpg"
+        },
+        {
+            "id": "5",
+            "title": "Harry Potter and the Chamber of Secrets",
+            "author": "J. K. Rowling",
+            "pages": "251",
+            "chapters": "18",
+            "genre": "Fantasy",
+            "cover_img": "https://images-na.ssl-images-amazon.com/images/I/91OINeHnJGL.jpg"
+        },
+        {
+            "id": "6",
+            "title": "The Alchemist",
+            "author": "Paulo Coelho",
+            "pages": "208",
+            "chapters": "4",
+            "genre": "Fantasy",
+            "cover_img": "https://covers.openlibrary.org/b/id/10705682-L.jpg"
+        },
+        {
+            "id": "7",
+            "title": "The Catcher in the Rye",
+            "author": "J. D. Salinger",
+            "pages": "277",
+            "chapters": "26",
+            "genre": "Coming-of-age",
+            "cover_img": "https://images-na.ssl-images-amazon.com/images/I/81OthjkJBuL.jpg"
+        },
+        {
+            "id": "8",
+            "title": "The Fault in our Stars",
+            "author": "John Green ",
+            "pages": "313",
+            "chapters": "25",
+            "genre": "Young adult novel, Realistic fiction",
+            "cover_img": "https://images-na.ssl-images-amazon.com/images/I/817tHNcyAgL.jpg"
+        },
+        {
+            "id": "9",
+            "title": "The Godfather",
+            "author": "Mario Puzo",
+            "pages": "448",
+            "chapters": "32",
+            "genre": "Crime novel",
+            "cover_img": "https://images-na.ssl-images-amazon.com/images/I/71Jk3baRdnL.jpg"
+        },
+        {
+            "id": "10",
+            "title": "One Hundred Years of Solitude",
+            "author": "Gabriel García Márquez",
+            "pages": "448",
+            "chapters": "20",
+            "genre": "Magic realism",
+            "cover_img": "https://images-na.ssl-images-amazon.com/images/I/91mftQtgAkL.jpg"
+        },
+        {
+            "id": "11",
+            "title": "Heidi",
+            "author": "Johanna Spyri",
+            "pages": "170",
+            "chapters": "10",
+            "genre": "Children's Fiction",
+            "cover_img": "https://images-na.ssl-images-amazon.com/images/I/41Z00Ecg8kL.jpg"
+        },
+        {
+            "id": "12",
+            "title": "Anne of Green Gables",
+            "author": "Lucy Maud Montgomery",
+            "pages": "206",
+            "chapters": "38",
+            "genre": "Children's novel",
+            "cover_img": "https://images-na.ssl-images-amazon.com/images/I/81bjhPai7DL.jpg"
+        },
+        {
+            "id": "13",
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "pages": "208",
+            "chapters": "9",
+            "genre": "Novel, Tragedy",
+            "cover_img": "https://149352626.v2.pressablecdn.com/wp-content/uploads/2018/02/CK-3-684x1024.jpg"
+        },
+        {
+            "id": "14",
+            "title": "Gone with the Wind",
+            "author": "Margaret Mitchell",
+            "pages": "1037",
+            "chapters": "63",
+            "genre": "Historical Fiction",
+            "cover_img": "https://www.publishersweekly.com/images/data/ARTICLE_PHOTO/photo/000/004/4666-1.JPG"
+        },
+        {
+            "id": "15",
+            "title": "The Republic",
+            "author": "Plato",
+            "pages": "700",
+            "chapters": "18",
+            "genre": "Political Philosophy",
+            "cover_img": "https://kbimages1-a.akamaihd.net/448d288f-feb2-4124-983a-bb94e570d1d3/1200/1200/False/the-republic-90.jpg"
+        }
+    ]
 }
-]
