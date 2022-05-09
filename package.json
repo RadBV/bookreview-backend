@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
+    "schema": "psql -U postgres -f db/schema.sql",
+    "seed": "psql -U postgres -f db/seed.sql",
     "test": "jest"
   },
   "author": "Ranpdharani Valongo",
