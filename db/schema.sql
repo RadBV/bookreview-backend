@@ -4,7 +4,7 @@ CREATE DATABASE book_app;
 
 \c book_app;
 
-CREATE TABLE books {
+CREATE TABLE books (
     id SERIAL PRIMARY KEY,
     title text,
     author text,
@@ -12,4 +12,4 @@ CREATE TABLE books {
     chapters text,
     genre text,
     cover_img text
-}
+)

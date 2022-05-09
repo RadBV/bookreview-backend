@@ -1,8 +1,8 @@
-c\ book_app;
+\c book_app;
 
 INSERT INTO books (title, author, pages, chapters, genre, cover_img) VALUES
     ('The Lion, The Witch, and the Wardrobe','C. S. Lewis','208','17','Fantasy, Children''s Fiction','https://g.christianbook.com/g/slideshow/0/09423/main/09423_1_ftc_dp.jpg'),
-    ('She: A History of Adventure','H. Rider Haggard','189','28','Adventure''https://images-na.ssl-images-amazon.com/images/I/81Ccf2K0axL.jpg'),
+    ('She: A History of Adventure','H. Rider Haggard','189','28','Adventure','https://images-na.ssl-images-amazon.com/images/I/81Ccf2K0axL.jpg'),
     ('The Adventures of Pinocchio','Carlo Collodi','224','36','Fantasy, Children''s Fiction','https://kbimages1-a.akamaihd.net/45a6a55a-c6ae-4d8e-9d8a-f97241c8630e/353/569/90/False/the-adventures-of-pinocchio-35.jpg'),
     ('The Da Vinci Code','Dan Brown','689','101','Mystery Thriller','https://images-na.ssl-images-amazon.com/images/I/91Q5dCjc2KL.jpg'),
     ('Harry Potter and the Chamber of Secrets','J. K. Rowling','251','18','Fantasy','https://images-na.ssl-images-amazon.com/images/I/91OINeHnJGL.jpg'),

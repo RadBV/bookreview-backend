@@ -1,10 +1,18 @@
 const express = require("express");
 const router = express.Router();
 
-const bookData = require("../bookData.json");
+// const bookData = require("../bookData.json");
 
-router.get("/", (request,response) => {
-    let books = bookData.books
+const db = require("../db/dbconfig");
+
+
+router.get("/", async (request,response) => {
+    // let books = bookData.books
+
+    let books = await db.any("SELECT * FROM books")
+
+    console.log(books);
+
     let {start, end, title} = request.query;
     start = Number(start), end = Number(end);
     console.log(start,end)
