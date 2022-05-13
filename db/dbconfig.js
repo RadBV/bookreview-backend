@@ -7,7 +7,7 @@ const cn = {
     connectionString : databaseURL,
     allowExitOnIdle: true,
     max: 30,
-
+    ssl: false
 }
 
 const db = pgp(cn);
