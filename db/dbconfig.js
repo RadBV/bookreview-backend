@@ -1,7 +1,7 @@
 require("dotenv").config();
-const pgp = require('pg-promise')(); //npm install pg-promise
+const pgp = require('pg-promise')(); 
 
-const databaseURL = process.env.DEV_DB; //set this variable in .env
+const databaseURL = process.env.DB_URL; 
 
 const cn = {
     connectionString : databaseURL,
