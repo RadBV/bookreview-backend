@@ -1,13 +1,13 @@
 const express = require("express");
 const router = express.Router();
-
+const {getAllBooks,getSingleBook,createBook,updateBook,deleteBook} = require('../queries/bookQueries');
 const db = require("../db/dbconfig");
 
 
 //-- get all books
 router.get("/", async (request,response) => {
 
-    let books = await db.any("SELECT * FROM books")
+    let books = await getAllBooks()
 
     console.log(books);
 
@@ -32,7 +32,7 @@ router.get("/:id", async (request,response) => {
             throw "Book ID must be an integer";
         };
 
-        const singleBook = await db.oneOrNone('SELECT * FROM books WHERE id = $1', [bookId])
+        const singleBook = await getSingleBook(bookId)
 
         if(singleBook){
             let payload = {
@@ -63,7 +63,7 @@ router.post("/", async (request,response) => {
             request.body.genre, 
             request.body.cover_img]
 
-        const book = await db.one('INSERT INTO books(title, author, pages, chapters, genre, cover_img) VALUES ($1,$2,$3,$4,$5,$6) RETURNING *', infoArr)
+        const book = await createBook(infoArr)
         response.json(book)
 
     } catch (err) {
@@ -76,7 +76,7 @@ router.post("/", async (request,response) => {
 router.put("/:id", async (request,response) => {
     try {
         const bookId = request.params.id
-        let singleBook = await db.oneOrNone('SELECT * FROM books WHERE id = $1', [bookId])
+        let singleBook = await getSingleBook(bookId)
 
 
         let infoArr = [
@@ -88,7 +88,7 @@ router.put("/:id", async (request,response) => {
             request.body.cover_img || singleBook.cover_img, 
             bookId]
 
-        let updatedbook = await db.one('UPDATE books SET title=$1, author=$2, pages=$3, chapters=$4, genre=$5, cover_img=$6 WHERE id=$7 RETURNING *', infoArr)
+        let updatedbook = await updateBook(infoArr)
         response.send(updatedbook)
 
     } catch (err) {
@@ -102,7 +102,7 @@ router.delete("/:id", async (request, response) => {
     try {
         const bookId = request.params.id
 
-        const {title,author} = await db.oneOrNone('DELETE FROM books WHERE id = $1 RETURNING *', [bookId])
+        const {title,author} = await deleteBook(bookId)
         response.json({
             status: "succes",
             message: `${title} by ${author} has been deleted`
